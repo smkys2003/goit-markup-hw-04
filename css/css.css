@@ -8,6 +8,12 @@ body {
     background-color: #FFFFFF;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
     text-decoration: none;
 }
@@ -37,6 +43,7 @@ h1 ,h2 ,h3 , h4 , p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:48px;
 }
 
 ul {
@@ -59,6 +66,10 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-decoration: none;
+    display: block;
+    padding: 24px 0;   
+
 }
 
 .navigation:hover,
@@ -84,11 +95,6 @@ img {
     color: #404bbf;
 }
 
-.first-section {
-    background-color: #2e2f42;  
-    
-    
-}
 
 
 .title {
@@ -101,19 +107,6 @@ img {
 
 }
 
-
-
-.button {
-    background-color:#4D5AE5;
-    font-family:"Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    margin-top:64px ;
-}
 
 .button:hover,
 .button:focus{
@@ -195,12 +188,12 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding: 24px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 156px;
     padding-right: 156px;
+    height: 72px;
 }
 
 .container {
@@ -222,8 +215,22 @@ img {
     margin-left: 76px;
 }
 
-.navigation {
-     padding: 24px 0;
+.underline {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Текст сверху, линия снизу */
+    align-items: center;    /* Центрируем линию под текстом */
+    height: 100%;   
+}
+.underline::after {
+    content: "";
+    display: block;
+    width: 100%;         
+    height: 4px;         
+    background-color: #404BBF;
+    border-radius: 2px;  
+    position: absolute;
+    bottom: 0;    
 }
 
 .info-items {
@@ -236,13 +243,16 @@ img {
     align-items: center;
 }
 
-.info-items li:not(:last-child) {
-    margin-right: 40px;
-}
 
 .first-section {
     padding: 188px 0;
-
+    background-color: #2e2f42;  
+background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)
+  ),
+  url("../images/people-office 1.jpg");
+  background-size: cover;
 }
 
 .title {
@@ -255,9 +265,16 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
-    background-color: #4d5ae5;
     border-radius: 4px;
+    background-color:#4D5AE5;
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
     cursor: pointer;
+    gap: 48px;
 }
 
 .second-section {
@@ -383,6 +400,7 @@ width: calc((100% - 48px) / 3);
 .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
+    margin-right: 0;
 }
 
 .footer-paragraph {
@@ -403,4 +421,29 @@ width: calc((100% - 48px) / 3);
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #434455;
+}
+
+.socialmedia-icon {
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
+}
+
+.social-link {
+background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.socialmedia-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    
+    
 }
