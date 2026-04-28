@@ -446,7 +446,7 @@ background-color: #4d5ae5;
 }
 
 .nav-link-active::after{
-    content: " ";
+    content: "";
     position: absolute;
     width: 100%;
     bottom: -1px;
