@@ -526,6 +526,6 @@ gap: 16px;
 }
 
 .social-link-footer:hover,
-.social-link:active {
+.social-link:focus {
     background-color:#31d0aa;
 }
