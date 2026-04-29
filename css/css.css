@@ -467,6 +467,7 @@ background-color: #4d5ae5;
      background-color: #404bbf;
 }
 
+
 .socialmedia-list {
     display: flex;
     justify-content: center;
@@ -522,4 +523,8 @@ gap: 16px;
 .socialmedia-item-footer {
     width: 40px;
     height: 40px;
+}
+
+.social-link-footer:hover {
+    background-color:#31d0aa;
 }
