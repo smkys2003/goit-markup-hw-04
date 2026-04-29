@@ -201,6 +201,7 @@ img {
 }
 
 .nav-panel {
+    
     display: flex;
     align-items: center;
 }
@@ -492,4 +493,33 @@ background-color: #4d5ae5;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-paragraph-footer {
+    margin-right: 120px;
+
+}
+
+.socialmedia-title-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:  #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.socialmedia-list-footer {
+display: flex;
+gap: 16px;
+}
+
+.socialmedia-item-footer {
+    width: 40px;
+    height: 40px;
 }
